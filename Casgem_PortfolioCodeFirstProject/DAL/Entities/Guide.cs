@@ -10,7 +10,7 @@ namespace Casgem_PortfolioCodeFirstProject.DAL.Entities
         public int GuideID { get; set; }
         public string GuideName { get; set;}
         public string GuideTitle { get; set; }
-        public string ImageURL { get; set; }
+        public string GuideImageURL { get; set; }
         public List<SocialMedia> SocialMedia { get; set; }
     }
 }

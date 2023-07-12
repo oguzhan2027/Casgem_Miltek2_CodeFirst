@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Casgem_PortfolioCodeFirstProject.DAL.Context;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,44 +9,54 @@ namespace Casgem_PortfolioCodeFirstProject.Controllers
 {
     public class DefaultController : Controller
     {
-        // GET: Default
+        TravelContext travelContext = new TravelContext();
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult PartialHead()
+        public PartialViewResult PartialHead()
         {
             return PartialView();
         }
-        public ActionResult PartialNavbar()
+        public PartialViewResult PartialNavbar()
         {
             return PartialView();
         }
-        public ActionResult PartialSlider() 
+        public PartialViewResult PartialSliderScript()
         {
             return PartialView();
         }
-        public ActionResult CallToAction()
+        public PartialViewResult PartialSlider()
         {
             return PartialView();
         }
-        public ActionResult PartialSpecification()
+        public PartialViewResult PartialBooking()
         {
             return PartialView();
         }
-        public ActionResult PartialCovers()
+        public PartialViewResult PartialFeature()
         {
             return PartialView();
         }
-        public ActionResult PartialTeams()
+        public PartialViewResult PartialDestinations()
+        {
+            var values = travelContext.Destinations.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialAbout()
         {
             return PartialView();
         }
-        public ActionResult PartialClients()
-        { 
+        public PartialViewResult PartialBookingCover()
+        {
             return PartialView();
         }
-        public ActionResult PartialFooter() 
+        public PartialViewResult PartialFooter()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult PartialMainScript()
         {
             return PartialView();
         }

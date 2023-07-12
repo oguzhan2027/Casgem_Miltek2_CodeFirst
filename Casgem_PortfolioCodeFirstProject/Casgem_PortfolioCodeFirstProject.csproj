@@ -138,13 +138,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202307120812466_mig_add_relation_guide_socialmedia.cs" />
-    <Compile Include="Migrations\202307120812466_mig_add_relation_guide_socialmedia.designer.cs">
-      <DependentUpon>202307120812466_mig_add_relation_guide_socialmedia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307120818464_mig_add_relation_guide_socialmedia2.cs" />
-    <Compile Include="Migrations\202307120818464_mig_add_relation_guide_socialmedia2.designer.cs">
-      <DependentUpon>202307120818464_mig_add_relation_guide_socialmedia2.cs</DependentUpon>
+    <Compile Include="Migrations\202307121025097_mig_add_relation_guide_socialmedia.cs" />
+    <Compile Include="Migrations\202307121025097_mig_add_relation_guide_socialmedia.designer.cs">
+      <DependentUpon>202307121025097_mig_add_relation_guide_socialmedia.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -248,12 +244,14 @@
     <Content Include="Views\Default\PartialHead.cshtml" />
     <Content Include="Views\Default\PartialNavbar.cshtml" />
     <Content Include="Views\Default\PartialSlider.cshtml" />
-    <Content Include="Views\Default\CallToAction.cshtml" />
-    <Content Include="Views\Default\PartialSpecification.cshtml" />
-    <Content Include="Views\Default\PartialCovers.cshtml" />
-    <Content Include="Views\Default\PartialTeams.cshtml" />
-    <Content Include="Views\Default\PartialClients.cshtml" />
+    <Content Include="Views\Default\PartialDestinations.cshtml" />
     <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Default\PartialSliderScript.cshtml" />
+    <Content Include="Views\Default\PartialBooking.cshtml" />
+    <Content Include="Views\Default\PartialFeature.cshtml" />
+    <Content Include="Views\Default\PartialAbout.cshtml" />
+    <Content Include="Views\Default\PartialBookingCover.cshtml" />
+    <Content Include="Views\Default\PartialMainScript.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,11 +285,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202307120812466_mig_add_relation_guide_socialmedia.resx">
-      <DependentUpon>202307120812466_mig_add_relation_guide_socialmedia.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307120818464_mig_add_relation_guide_socialmedia2.resx">
-      <DependentUpon>202307120818464_mig_add_relation_guide_socialmedia2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202307121025097_mig_add_relation_guide_socialmedia.resx">
+      <DependentUpon>202307121025097_mig_add_relation_guide_socialmedia.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

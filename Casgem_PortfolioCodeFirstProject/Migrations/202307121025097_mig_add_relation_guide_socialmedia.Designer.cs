@@ -13,12 +13,12 @@ namespace Casgem_PortfolioCodeFirstProject.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202307120812466_mig_add_relation_guide_socialmedia"; }
+            get { return "202307121025097_mig_add_relation_guide_socialmedia"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return Resources.GetString("Source"); }
+            get { return null; }
         }
         
         string IMigrationMetadata.Target
