@@ -133,6 +133,7 @@
     <Compile Include="Controllers\ErorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="DAL\Context\TravelContext.cs" />
     <Compile Include="DAL\Entities\Admin.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="DAL\Entities\Contact.cs" />
     <Compile Include="DAL\Entities\Destination.cs" />
     <Compile Include="DAL\Entities\Guide.cs" />
+    <Compile Include="DAL\Entities\Register.cs" />
     <Compile Include="DAL\Entities\SocialMedia.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -151,6 +153,10 @@
     <Compile Include="Migrations\202307121159280_mig_add_admin_entity.cs" />
     <Compile Include="Migrations\202307121159280_mig_add_admin_entity.designer.cs">
       <DependentUpon>202307121159280_mig_add_admin_entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307121958268_register.cs" />
+    <Compile Include="Migrations\202307121958268_register.designer.cs">
+      <DependentUpon>202307121958268_register.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -192,6 +198,13 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Templates\error\css\style.css" />
+    <Content Include="Templates\error\images\4.png" />
+    <Content Include="Templates\error\images\5.png" />
+    <Content Include="Templates\error\images\arrow.png" />
+    <Content Include="Templates\error\images\carrow.png" />
+    <Content Include="Templates\error\index.html" />
+    <Content Include="Templates\error\w3layouts-License.txt" />
     <Content Include="Templates\go-trip-starter\about.html" />
     <Content Include="Templates\go-trip-starter\assets\css\style-starter.css" />
     <Content Include="Templates\go-trip-starter\assets\fonts\fontawesome-webfont.svg" />
@@ -250,6 +263,19 @@
     <Content Include="Templates\sidebar-03\js\jquery.min.js" />
     <Content Include="Templates\sidebar-03\js\main.js" />
     <Content Include="Templates\sidebar-03\js\popper.js" />
+    <Content Include="Templates\web\css\font-awesome.css" />
+    <Content Include="Templates\web\css\style.css" />
+    <Content Include="Templates\web\fonts\fontawesome-webfont.svg" />
+    <Content Include="Templates\web\images\b1.jpg" />
+    <Content Include="Templates\web\index.html" />
+    <Content Include="Templates\web\w3layouts-License.txt" />
+    <Content Include="Views\error\css\style.css" />
+    <Content Include="Views\error\images\4.png" />
+    <Content Include="Views\error\images\5.png" />
+    <Content Include="Views\error\images\arrow.png" />
+    <Content Include="Views\error\images\carrow.png" />
+    <Content Include="Views\error\index.html" />
+    <Content Include="Views\error\w3layouts-License.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -393,6 +419,14 @@
     <Content Include="Views\ErorPage\Page404.cshtml" />
     <Content Include="Views\SocialMedia\Index.cshtml" />
     <Content Include="Views\SocialMedia\AddSocialMedia.cshtml" />
+    <Content Include="Templates\web\fonts\fontawesome-webfont.eot" />
+    <Content Include="Templates\web\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Templates\web\fonts\fontawesome-webfont.woff" />
+    <Content Include="Templates\web\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Templates\web\fonts\FontAwesome.otf" />
+    <Content Include="Views\Register\Index.cshtml" />
+    <Content Include="Views\error\images\Thumbs.db" />
+    <Content Include="Templates\error\images\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -431,6 +465,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307121159280_mig_add_admin_entity.resx">
       <DependentUpon>202307121159280_mig_add_admin_entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307121958268_register.resx">
+      <DependentUpon>202307121958268_register.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

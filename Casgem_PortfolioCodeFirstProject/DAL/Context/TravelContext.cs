@@ -16,6 +16,7 @@ namespace Casgem_PortfolioCodeFirstProject.DAL.Context
             public DbSet<Contact> Contacts { get; set; }
             public DbSet<Destination> Destinations { get; set; }
             public DbSet<Admin> Admins { get; set; }
+            public DbSet<Register> Registers { get; set; }
 
         
     }

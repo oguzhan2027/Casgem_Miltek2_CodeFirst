@@ -13,7 +13,7 @@ namespace Casgem_PortfolioCodeFirstProject.Controllers
         TravelContext travelContext = new TravelContext();
         public ActionResult Index()
         {
-            var values = TravelContext.SocialMedias.ToList();
+            var values = travelContext.SocialMedias.ToList();
             return View(values);
         }
         [HttpGet]
@@ -22,7 +22,7 @@ namespace Casgem_PortfolioCodeFirstProject.Controllers
             List<SelectListItem> values=(from x in travelContext.Guides.ToList()
                                          select new SelectListItem
                                          {
-                                             Value = x.Guide.ToString(),
+                                             Value = x.GuideID.ToString(),
                                              Text = x.GuideName
                                          }).ToList();
             ViewBag.v = values;
