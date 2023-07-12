@@ -130,8 +130,10 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\ErorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="DAL\Context\TravelContext.cs" />
     <Compile Include="DAL\Entities\Admin.cs" />
     <Compile Include="DAL\Entities\Booking.cs" />
@@ -388,6 +390,9 @@
     <Content Include="Templates\Report-Login-Free\fonts\fontawesome-webfont.woff" />
     <Content Include="Templates\Report-Login-Free\fonts\fontawesome-webfont.woff2" />
     <Content Include="Templates\Report-Login-Free\fonts\FontAwesome.otf" />
+    <Content Include="Views\ErorPage\Page404.cshtml" />
+    <Content Include="Views\SocialMedia\Index.cshtml" />
+    <Content Include="Views\SocialMedia\AddSocialMedia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace Casgem_PortfolioCodeFirstProject.Controllers
 {
@@ -22,8 +23,14 @@ namespace Casgem_PortfolioCodeFirstProject.Controllers
         public ActionResult Index(Admin admin)
         {
             var values = travelContext.Admins.FirstOrDefault(x=> x.UserName == admin.UserName && x.Password == admin.Password);
-            Session["userTravel"] = values.UserName.ToString();
-            return RedirectToAction("Index","AdminGuide");
+            
+            if(values != null)
+            {
+                FormsAuthentication.SetAuthCookie(values.UserName, false);
+                Session["userTravel"] = values.UserName.ToString();
+                return RedirectToAction("Index", "AdminGuide");
+
+            }
             return View();
         }
     }
