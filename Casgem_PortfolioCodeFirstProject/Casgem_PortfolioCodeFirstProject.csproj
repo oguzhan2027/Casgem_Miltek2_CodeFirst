@@ -138,11 +138,16 @@
     <Compile Include="DAL\Context\TravelContext.cs" />
     <Compile Include="DAL\Entities\Admin.cs" />
     <Compile Include="DAL\Entities\Booking.cs" />
+    <Compile Include="DAL\Entities\Category.cs" />
     <Compile Include="DAL\Entities\Contact.cs" />
     <Compile Include="DAL\Entities\Destination.cs" />
+    <Compile Include="DAL\Entities\Feature.cs" />
+    <Compile Include="DAL\Entities\Gallery.cs" />
     <Compile Include="DAL\Entities\Guide.cs" />
+    <Compile Include="DAL\Entities\Iletisim.cs" />
     <Compile Include="DAL\Entities\Register.cs" />
     <Compile Include="DAL\Entities\SocialMedia.cs" />
+    <Compile Include="DAL\Entities\Travel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
