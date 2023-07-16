@@ -127,6 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminGuideController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="DAL\Context\TravelContext.cs" />
+    <Compile Include="DAL\Entities\About.cs" />
     <Compile Include="DAL\Entities\Admin.cs" />
     <Compile Include="DAL\Entities\Booking.cs" />
     <Compile Include="DAL\Entities\Category.cs" />
@@ -162,6 +164,10 @@
     <Compile Include="Migrations\202307121958268_register.cs" />
     <Compile Include="Migrations\202307121958268_register.designer.cs">
       <DependentUpon>202307121958268_register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307161127434_mig_continue.cs" />
+    <Compile Include="Migrations\202307161127434_mig_continue.designer.cs">
+      <DependentUpon>202307161127434_mig_continue.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -432,6 +438,15 @@
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\error\images\Thumbs.db" />
     <Content Include="Templates\error\images\Thumbs.db" />
+    <Content Include="Views\About\Contact.cshtml" />
+    <Content Include="Views\About\Detay.cshtml" />
+    <Content Include="Views\About\Gallery.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\JS.cshtml" />
+    <Content Include="Views\About\PartialBreadcrumbs.cshtml" />
+    <Content Include="Views\About\PartialSliderScript.cshtml" />
+    <Content Include="Views\About\Team.cshtml" />
+    <Content Include="Views\About\Travel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -473,6 +488,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307121958268_register.resx">
       <DependentUpon>202307121958268_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307161127434_mig_continue.resx">
+      <DependentUpon>202307161127434_mig_continue.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

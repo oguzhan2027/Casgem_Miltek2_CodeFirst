@@ -7,5 +7,10 @@ namespace Casgem_PortfolioCodeFirstProject.DAL.Entities
 {
     public class Feature
     {
+        public int FeatureID { get; set; }
+        public string FeatureDes { get; set; }
+        public string FeatureTitle { get; set; }
+        public string FeatureImage { get; set; }
+        public string Status { get; set; }
     }
 }
